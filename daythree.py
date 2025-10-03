@@ -1,0 +1,15 @@
+# a=10
+# print(type(a))
+# s=str(a)
+# print(type(s))
+# k=float(s)
+# print(type(k))
+# list=[1,2,3,4]
+# print(list)
+# rev=tuple(list)
+# print(rev)
+# r=[1,2,3,]
+# r=set(list)
+# print(r)
+# r.add(12)
+# print(r)
