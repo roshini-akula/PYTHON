@@ -1,0 +1,16 @@
+class paper:
+    def __init__(self,no_of_sections,no_of_questions,total_marks,time):
+        self.no_of_sections=no_of_sections
+        self.no_of_questions=no_of_questions
+        self.total_marks=total_marks
+        self.time=time
+   def show(self):
+        print(
+            self.no_of_sections,
+            self.no_of_questions,
+            self.total_marks,
+            self.time)
+r=paper("2","10","60","2")
+r.show()
+p=paper("3","15","100","3")
+p.show()
