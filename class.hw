@@ -10,7 +10,7 @@ class paper:
             self.no_of_questions,
             self.total_marks,
             self.time)
-r=paper("2","10","60","2")
+r=paper("2","10","60","2 hrs")
 r.show()
-p=paper("3","15","100","3")
+p=paper("3","15","100","3 hrs")
 p.show()
