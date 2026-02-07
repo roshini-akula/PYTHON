@@ -1,0 +1,44 @@
+class CAR:
+  def __init__(self,name,model,price):
+    self.name=name
+    self.model=model
+    self.price=price
+  def show(self):
+      print(self.name,
+            self.model,
+            self.price)
+ 
+s=CAR("suz","shift",2000000)
+s.show()
+y=CAR("tata","new",300000)
+y.show()
+
+class BankAccount:
+  def __init__(self,name,balance,number):
+    self.name=name
+    self.balance=balance
+    self.number=number
+  def show(self):
+      print(self.name,
+            self.balance,
+            self.number)
+  def update(self,balance,number):
+      self.balance=balance
+      self.number=number
+  def withdraw(self,amount):
+      self.balance=self.balance-amount
+  def add(self,amount):
+      self.balance=self.balance+amount  
+  def show_balance(self):
+      print("total amount",self.balance)
+            
+a=BankAccount("A",2000,123456)
+a.show()
+a.update(1000,89)
+a.show()
+a.withdraw(500)
+a.show()
+a.add(100)
+a.show()
+b=BankAccount("B",10000,34569)
+b.show()
