@@ -1,0 +1,67 @@
+class Mother:
+    def __init__(self):
+        self.skin="white skin"
+        self.hair="black hair"
+class Father:
+    def __init__(self):
+        self.mind="Wise-mind"
+        self.loyality="loyal"
+class Daughter(Mother,Father):
+    def __init__(self):
+        Mother.__init__(self)
+        Father.__init__(self)
+        self.unique_quality="Transparency"
+        
+Angel=Daughter()
+print("From Mother:",Angel.hair)
+print("From Father:",Angel.loyality)
+print("unique:",Angel.unique_quality)
+
+class animal:
+    def sound(self):
+        print("animal sound")
+class dog(animal):
+    def sound(self):
+        print("bark")
+a=animal()
+a.sound()
+b=dog()
+b.sound()
+
+class A:
+    def add(self,a,b):
+        print("parent sum:",a+b)
+class B(A):
+    def add(self,a,b,c=0):
+        super().add(a,b)
+        print("child sum:",a+b+c)
+q=B()
+q.add(2,3,4)
+        
+class bankAccount:
+    def __init__(self,name,balance):
+        self.name=name
+        self.__balance=balance
+    def deposit(self,amount):
+        self.__balance+=amount
+        print("deposited:",amount)
+    def withdraw(self,amount):
+        if amount<=self.__balance:
+            self.__balance-=amount
+            print("withdraw:",amount)
+        else:
+            print("Insufficient Balance")
+    def show.balance(self):
+        print("balance",self.__balance)
+account=bankAccount("yamini",5000)
+
+from abc import ABC, abstractmethod
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+class square(shape):
+    def __init__(self,side):
+        self.side=side
+    def area(self):
+        print("area:",self.side*self.side)
